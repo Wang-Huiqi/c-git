@@ -13,7 +13,6 @@
  * };
  */
 struct ListNode* swapPairs(struct ListNode* head) {
-    if(head==NULL||head->next==NULL) return head;
     struct ListNode *headptr=(struct ListNode*)malloc(sizeof(struct ListNode));
     headptr->next=head;
     struct ListNode *temp=headptr,*first,*second;
