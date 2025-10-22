@@ -1,3 +1,11 @@
+// @before-stub-for-debug-begin
+#include <vector>
+#include <string>
+#include "commoncppproblem78.h"
+
+using namespace std;
+// @before-stub-for-debug-end
+
 /*
  * @lc app=leetcode.cn id=78 lang=cpp
  *
@@ -11,7 +19,7 @@ public:
         int n = nums.size();
         vector<vector<int>> ans;
         vector<int> path;
-        auto dfs = [&](this auto&& dfs, int i)->void {
+        auto dfs = [&] (this auto&& dfs, int i)->void {
             if (i == n) {
                 ans.push_back(path);
                 return;
